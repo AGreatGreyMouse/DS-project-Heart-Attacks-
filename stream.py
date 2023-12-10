@@ -3,7 +3,7 @@ import pandas as pd
 import matplotlib.pyplot as plt
 import seaborn as sns
 
-df_copy = pd.read_csv("/Users/sergeybudygin/PycharmProjects/pythonProject1/stream/new.csv")
+df_copy = pd.read_csv("https://github.com/AGreatGreyMouse/DS-project-Heart-Attacks-/blob/main/new.csv")
 
 
 def gr1():
