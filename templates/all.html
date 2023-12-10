@@ -1,0 +1,1825 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+    <meta charset="utf-8"/>
+    <meta name="generator" content="pandoc"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes"/>
+    <title>b32e713087dc43c5a72a0972fc013908</title>
+    <style>
+        header {
+            background-color: #3498db; /* Синий цвет для header */
+            color: #FFFFFF; /* Белый цвет текста в header */
+            padding: 10px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        header a {
+            color: #FFFFFF; /* Белый цвет для ссылок в header */
+            text-decoration: none;
+            margin: 0 20px;
+            padding-bottom: 3px;
+            border-bottom: 2px solid transparent; /* Убрано подчеркивание у ссылок */
+            transition: border-bottom 0.3s ease;
+        }
+
+        header a:hover {
+            border-bottom: 2px solid #FFFFFF; /* Добавлено подчеркивание при наведении на ссылку */
+        }
+
+        footer {
+            background-color: #3498db; /* Синий цвет для footer */
+            color: #FFFFFF; /* Белый цвет текста в footer */
+            text-align: center;
+            padding: 5px;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+
+        footer a {
+            color: #FFFFFF; /* Белый цвет для ссылок в footer */
+            text-decoration: none;
+            margin: 0 10px;
+        }
+        .white-button {
+            background-color: white;
+            border: 1px solid #ccc;
+            padding: 8px 16px;
+            text-decoration: none;
+            color: red;
+            border-radius: 4px;
+            display: inline-block;
+        }
+
+        html {
+            line-height: 1.5;
+            font-family: Georgia, serif;
+            font-size: 20px;
+            color: #1a1a1a;
+            background-color: #fdfdfd;
+        }
+
+        body {
+            margin: 0 auto;
+            max-width: 36em;
+            padding-left: 50px;
+            padding-right: 50px;
+            padding-top: 50px;
+            padding-bottom: 50px;
+            hyphens: auto;
+            overflow-wrap: break-word;
+            text-rendering: optimizeLegibility;
+            font-kerning: normal;
+        }
+
+        @media (max-width: 600px) {
+            body {
+                font-size: 0.9em;
+                padding: 1em;
+            }
+
+            h1 {
+                font-size: 1.8em;
+            }
+        }
+
+        @media print {
+            body {
+                background-color: transparent;
+                color: black;
+                font-size: 12pt;
+            }
+
+            p, h2, h3 {
+                orphans: 3;
+                widows: 3;
+            }
+
+            h2, h3, h4 {
+                page-break-after: avoid;
+            }
+        }
+
+        p {
+            margin: 1em 0;
+        }
+
+        a {
+            color: #1a1a1a;
+        }
+
+        a:visited {
+            color: #1a1a1a;
+        }
+
+        img {
+            max-width: 100%;
+        }
+
+        h1, h2, h3, h4, h5, h6 {
+            margin-top: 1.4em;
+        }
+
+        h5, h6 {
+            font-size: 1em;
+            font-style: italic;
+        }
+
+        h6 {
+            font-weight: normal;
+        }
+
+        ol, ul {
+            padding-left: 1.7em;
+            margin-top: 1em;
+        }
+
+        li > ol, li > ul {
+            margin-top: 0;
+        }
+
+        blockquote {
+            margin: 1em 0 1em 1.7em;
+            padding-left: 1em;
+            border-left: 2px solid #e6e6e6;
+            color: #606060;
+        }
+
+        code {
+            font-family: Menlo, Monaco, 'Lucida Console', Consolas, monospace;
+            font-size: 85%;
+            margin: 0;
+        }
+
+        pre {
+            margin: 1em 0;
+            overflow: auto;
+        }
+
+        pre code {
+            padding: 0;
+            overflow: visible;
+            overflow-wrap: normal;
+        }
+
+        .sourceCode {
+            background-color: transparent;
+            overflow: visible;
+        }
+
+        hr {
+            background-color: #1a1a1a;
+            border: none;
+            height: 1px;
+            margin: 1em 0;
+        }
+
+        table {
+            margin: 1em 0;
+            border-collapse: collapse;
+            width: 100%;
+            overflow-x: auto;
+            display: block;
+            font-variant-numeric: lining-nums tabular-nums;
+        }
+
+        table caption {
+            margin-bottom: 0.75em;
+        }
+
+        tbody {
+            margin-top: 0.5em;
+            border-top: 1px solid #1a1a1a;
+            border-bottom: 1px solid #1a1a1a;
+        }
+
+        th {
+            border-top: 1px solid #1a1a1a;
+            padding: 0.25em 0.5em 0.25em 0.5em;
+        }
+
+        td {
+            padding: 0.125em 0.5em 0.25em 0.5em;
+        }
+
+        header {
+            margin-bottom: 4em;
+            text-align: center;
+        }
+
+        #TOC li {
+            list-style: none;
+        }
+
+        #TOC ul {
+            padding-left: 1.3em;
+        }
+
+        #TOC > ul {
+            padding-left: 0;
+        }
+
+        #TOC a:not(:hover) {
+            text-decoration: none;
+        }
+
+        code {
+            white-space: pre-wrap;
+        }
+
+        span.smallcaps {
+            font-variant: small-caps;
+        }
+
+        div.columns {
+            display: flex;
+            gap: min(4vw, 1.5em);
+        }
+
+        div.column {
+            flex: auto;
+            overflow-x: auto;
+        }
+
+        div.hanging-indent {
+            margin-left: 1.5em;
+            text-indent: -1.5em;
+        }
+
+        ul.task-list {
+            list-style: none;
+        }
+
+        ul.task-list li input[type="checkbox"] {
+            width: 0.8em;
+            margin: 0 0.8em 0.2em -1.6em;
+            vertical-align: middle;
+        }
+
+        pre > code.sourceCode {
+            white-space: pre;
+            position: relative;
+        }
+
+        pre > code.sourceCode > span {
+            display: inline-block;
+            line-height: 1.25;
+        }
+
+        pre > code.sourceCode > span:empty {
+            height: 1.2em;
+        }
+
+        .sourceCode {
+            overflow: visible;
+        }
+
+        code.sourceCode > span {
+            color: inherit;
+            text-decoration: inherit;
+        }
+
+        div.sourceCode {
+            margin: 1em 0;
+        }
+
+        pre.sourceCode {
+            margin: 0;
+        }
+
+        @media screen {
+            div.sourceCode {
+                overflow: auto;
+            }
+        }
+
+        @media print {
+            pre > code.sourceCode {
+                white-space: pre-wrap;
+            }
+
+            pre > code.sourceCode > span {
+                text-indent: -5em;
+                padding-left: 5em;
+            }
+        }
+
+        pre.numberSource code {
+            counter-reset: source-line 0;
+        }
+
+        pre.numberSource code > span {
+            position: relative;
+            left: -4em;
+            counter-increment: source-line;
+        }
+
+        pre.numberSource code > span > a:first-child::before {
+            content: counter(source-line);
+            position: relative;
+            left: -1em;
+            text-align: right;
+            vertical-align: baseline;
+            border: none;
+            display: inline-block;
+            -webkit-touch-callout: none;
+            -webkit-user-select: none;
+            -khtml-user-select: none;
+            -moz-user-select: none;
+            -ms-user-select: none;
+            user-select: none;
+            padding: 0 4px;
+            width: 4em;
+            color: #aaaaaa;
+        }
+
+        pre.numberSource {
+            margin-left: 3em;
+            border-left: 1px solid #aaaaaa;
+            padding-left: 4px;
+        }
+
+        div.sourceCode {
+        }
+
+        @media screen {
+            pre > code.sourceCode > span > a:first-child::before {
+                text-decoration: underline;
+            }
+        }
+
+        code span.al {
+            color: #ff0000;
+            font-weight: bold;
+        }
+
+        /* Alert */
+        code span.an {
+            color: #60a0b0;
+            font-weight: bold;
+            font-style: italic;
+        }
+
+        /* Annotation */
+        code span.at {
+            color: #7d9029;
+        }
+
+        /* Attribute */
+        code span.bn {
+            color: #40a070;
+        }
+
+        /* BaseN */
+        code span.bu {
+            color: #008000;
+        }
+
+        /* BuiltIn */
+        code span.cf {
+            color: #007020;
+            font-weight: bold;
+        }
+
+        /* ControlFlow */
+        code span.ch {
+            color: #4070a0;
+        }
+
+        /* Char */
+        code span.cn {
+            color: #880000;
+        }
+
+        /* Constant */
+        code span.co {
+            color: #60a0b0;
+            font-style: italic;
+        }
+
+        /* Comment */
+        code span.cv {
+            color: #60a0b0;
+            font-weight: bold;
+            font-style: italic;
+        }
+
+        /* CommentVar */
+        code span.do {
+            color: #ba2121;
+            font-style: italic;
+        }
+
+        /* Documentation */
+        code span.dt {
+            color: #902000;
+        }
+
+        /* DataType */
+        code span.dv {
+            color: #40a070;
+        }
+
+        /* DecVal */
+        code span.er {
+            color: #ff0000;
+            font-weight: bold;
+        }
+
+        /* Error */
+        code span.ex {
+        }
+
+        /* Extension */
+        code span.fl {
+            color: #40a070;
+        }
+
+        /* Float */
+        code span.fu {
+            color: #06287e;
+        }
+
+        /* Function */
+        code span.im {
+            color: #008000;
+            font-weight: bold;
+        }
+
+        /* Import */
+        code span.in {
+            color: #60a0b0;
+            font-weight: bold;
+            font-style: italic;
+        }
+
+        /* Information */
+        code span.kw {
+            color: #007020;
+            font-weight: bold;
+        }
+
+        /* Keyword */
+        code span.op {
+            color: #666666;
+        }
+
+        /* Operator */
+        code span.ot {
+            color: #007020;
+        }
+
+        /* Other */
+        code span.pp {
+            color: #bc7a00;
+        }
+
+        /* Preprocessor */
+        code span.sc {
+            color: #4070a0;
+        }
+
+        /* SpecialChar */
+        code span.ss {
+            color: #bb6688;
+        }
+
+        /* SpecialString */
+        code span.st {
+            color: #4070a0;
+        }
+
+        /* String */
+        code span.va {
+            color: #19177c;
+        }
+
+        /* Variable */
+        code span.vs {
+            color: #4070a0;
+        }
+
+        /* VerbatimString */
+        code span.wa {
+            color: #60a0b0;
+            font-weight: bold;
+            font-style: italic;
+        }
+
+        /* Warning */
+        .display.math {
+            display: block;
+            text-align: center;
+            margin: 0.5rem auto;
+        }
+    </style>
+    <!--[if lt IE 9]>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv-printshiv.min.js"></script>
+    <![endif]-->
+</head>
+<body>
+<header>
+    <nav>
+        <a href="/home">Home</a>
+        <a href="/game">Game</a>
+        <a href="/all">All</a>
+    </nav>
+</header>
+<div id="875d73eacd017556" class="cell markdown" data-collapsed="false">
+    <h1 id="heart-attack-analysis--prediction">Heart Attack Analysis &amp;
+        Prediction</h1>
+    <h4
+            id="before-we-get-started-take-a-quick-look-at-a-transcript-of-each-of-the-items-of-my-dataset">Before
+        we get started, take a quick look at a transcript of each of the items
+        of my dataset:</h4>
+    <p><code>1.</code> <strong>age</strong>: Patient's age</p>
+    <p><code>2.</code> <strong>sex</strong>: Gender of the patient</p>
+    <ul>
+        <li>1 - male</li>
+        <li>0 - female</li>
+    </ul>
+    <p><code>3.</code> <strong>cp</strong>: Type of chest pain</p>
+    <ul>
+        <li>0: typical angina pectoris</li>
+        <li>1: atypical angina</li>
+        <li>2: pain unrelated to angina</li>
+        <li>3: asymptomatic</li>
+    </ul>
+    <p><code>4.</code> <strong>trtbps</strong>: Resting blood pressure (in
+        mmHg)</p>
+    <p><code>5.</code> <strong>chol</strong>: Cholesterol level in mg/dl is
+        determined using a BMI sensor</p>
+    <p><code>6.</code> <strong>fbs</strong>: (fasting blood sugar &gt; 120
+        mg/dl):</p>
+    <ul>
+        <li>1 = true</li>
+        <li>0 = false</li>
+    </ul>
+    <p><code>7.</code> <strong>restecg</strong>: resting electrocardiography
+        results</p>
+    <ul>
+        <li>0 = norm</li>
+        <li>1 = Normality of the ST-T wave</li>
+        <li>2 = Hypertrophy of the left ventricle</li>
+    </ul>
+    <p><code>8.</code> <strong>thalachh</strong>: Maximum heart rate
+        reached</p>
+    <p><code>9.</code> <strong>exng</strong>: Angina pectoris caused by
+        exercise</p>
+    <ul>
+        <li>1 = Yes</li>
+        <li>0 = No</li>
+    </ul>
+    <p><code>10.</code> <strong>?old peak</strong>: Previous peak</p>
+    <p><code>11.</code> <strong>?slp</strong>: Slope. There are 3
+        categories</p>
+    <p><code>12.</code> <strong>?caa</strong>: Coronary Artery Anomalies.
+        There are 5 categories</p>
+    <p><code>13.</code> <strong>?thall</strong>: Thallium stress test
+        result. There are 4 categories</p>
+    <p><code>14.</code> <strong>output</strong>: Target variable</p>
+    <ul>
+        <li>0 = not at risk</li>
+        <li>1 = at risk</li>
+    </ul>
+    <h4 id="for-my-project-ill-use-some-libraries-here-are-they">For my
+        project, I'll use some libraries. Here are they:</h4>
+</div>
+<div id="86ae9ee2b0236b9f" class="cell code" data-execution_count="45"
+     data-ExecuteTime="{&quot;end_time&quot;:&quot;2023-12-10T19:26:29.989953Z&quot;,&quot;start_time&quot;:&quot;2023-12-10T19:26:29.656357Z&quot;}"
+     data-collapsed="false">
+    <div class="sourceCode" id="cb1"><pre
+            class="sourceCode python"><code class="sourceCode python"><span id="cb1-1"><a href="#cb1-1"
+                                                                                          aria-hidden="true"
+                                                                                          tabindex="-1"></a><span
+            class="im">import</span> pandas <span class="im">as</span> pd</span>
+<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a><span
+        class="im">import</span> plotly.express <span class="im">as</span> px</span>
+<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> matplotlib.pyplot <span
+        class="im">as</span> plt</span>
+<span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> seaborn <span
+        class="im">as</span> sns</span>
+<span id="cb1-6"><a href="#cb1-6" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-7"><a href="#cb1-7" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> warnings</span>
+<span id="cb1-8"><a href="#cb1-8" aria-hidden="true" tabindex="-1"></a>warnings.filterwarnings(<span class="st">&#39;ignore&#39;</span>)</span>
+<span id="cb1-9"><a href="#cb1-9" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-10"><a href="#cb1-10" aria-hidden="true" tabindex="-1"></a>pd.set_option(<span class="st">&#39;display.max_columns&#39;</span>, <span
+        class="va">None</span>)</span>
+<span id="cb1-11"><a href="#cb1-11" aria-hidden="true" tabindex="-1"></a>pd.set_option(<span class="st">&#39;display.width&#39;</span>, <span
+        class="dv">500</span>)</span>
+<span id="cb1-12"><a href="#cb1-12" aria-hidden="true" tabindex="-1"></a>pd.set_option(<span class="st">&#39;display.float_format&#39;</span>,  <span
+        class="st">&#39;</span><span class="sc">{:.2f}</span><span class="st">&#39;</span>.<span
+        class="bu">format</span>)</span></code></pre>
+    </div>
+</div>
+<div id="682af582d2221153" class="cell markdown" data-collapsed="false">
+    <p>Let me demonstrate the structure</p>
+</div>
+<div id="b29da3602a897ea7" class="cell code" data-execution_count="46"
+     data-ExecuteTime="{&quot;end_time&quot;:&quot;2023-12-10T19:26:30.005949Z&quot;,&quot;start_time&quot;:&quot;2023-12-10T19:26:29.683801Z&quot;}"
+     data-collapsed="false">
+    <div class="sourceCode" id="cb2"><pre
+            class="sourceCode python"><code class="sourceCode python"><span id="cb2-1"><a href="#cb2-1"
+                                                                                          aria-hidden="true"
+                                                                                          tabindex="-1"></a>df <span
+            class="op">=</span> pd.read_csv(<span class="st">&#39;heart.xls&#39;</span>)</span>
+<span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-3"><a href="#cb2-3" aria-hidden="true" tabindex="-1"></a><span class="co">#renaming &#39;output&#39; column to &#39;target&#39; for a better understanding</span></span>
+<span id="cb2-4"><a href="#cb2-4" aria-hidden="true" tabindex="-1"></a>new_columns <span class="op">=</span> [<span
+        class="st">&#39;age&#39;</span>,<span class="st">&#39;sex&#39;</span>,<span class="st">&#39;cp&#39;</span>,<span
+        class="st">&#39;trtbps&#39;</span>,<span class="st">&#39;chol&#39;</span>,<span class="st">&#39;fbs&#39;</span>,<span
+        class="st">&#39;restecg&#39;</span>,<span class="st">&#39;thalachh&#39;</span>,<span
+        class="st">&#39;exng&#39;</span>,<span class="st">&#39;oldpeak&#39;</span>,<span class="st">&#39;slp&#39;</span>,<span
+        class="st">&#39;caa&#39;</span>,<span class="st">&#39;thall&#39;</span>,<span class="st">&#39;target&#39;</span>]</span>
+<span id="cb2-5"><a href="#cb2-5" aria-hidden="true" tabindex="-1"></a>df.columns <span class="op">=</span> new_columns</span>
+<span id="cb2-6"><a href="#cb2-6" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-7"><a href="#cb2-7" aria-hidden="true" tabindex="-1"></a>df_copy <span
+        class="op">=</span> df.copy()</span>
+<span id="cb2-8"><a href="#cb2-8" aria-hidden="true" tabindex="-1"></a>df_copy.head()</span></code></pre>
+    </div>
+    <div class="output execute_result" data-execution_count="46">
+        <div>
+            <style scoped>
+                .dataframe tbody tr th:only-of-type {
+                    vertical-align: middle;
+                }
+
+                .dataframe tbody tr th {
+                    vertical-align: top;
+                }
+
+                .dataframe thead th {
+                    text-align: right;
+                }
+            </style>
+            <table border="1" class="dataframe">
+                <thead>
+                <tr style="text-align: right;">
+                    <th></th>
+                    <th>age</th>
+                    <th>sex</th>
+                    <th>cp</th>
+                    <th>trtbps</th>
+                    <th>chol</th>
+                    <th>fbs</th>
+                    <th>restecg</th>
+                    <th>thalachh</th>
+                    <th>exng</th>
+                    <th>oldpeak</th>
+                    <th>slp</th>
+                    <th>caa</th>
+                    <th>thall</th>
+                    <th>target</th>
+                </tr>
+                </thead>
+                <tbody>
+                <tr>
+                    <th>0</th>
+                    <td>63</td>
+                    <td>1</td>
+                    <td>3</td>
+                    <td>145</td>
+                    <td>233</td>
+                    <td>1</td>
+                    <td>0</td>
+                    <td>150</td>
+                    <td>0</td>
+                    <td>2.30</td>
+                    <td>0</td>
+                    <td>0</td>
+                    <td>1</td>
+                    <td>1</td>
+                </tr>
+                <tr>
+                    <th>1</th>
+                    <td>37</td>
+                    <td>1</td>
+                    <td>2</td>
+                    <td>130</td>
+                    <td>250</td>
+                    <td>0</td>
+                    <td>1</td>
+                    <td>187</td>
+                    <td>0</td>
+                    <td>3.50</td>
+                    <td>0</td>
+                    <td>0</td>
+                    <td>2</td>
+                    <td>1</td>
+                </tr>
+                <tr>
+                    <th>2</th>
+                    <td>41</td>
+                    <td>0</td>
+                    <td>1</td>
+                    <td>130</td>
+                    <td>204</td>
+                    <td>0</td>
+                    <td>0</td>
+                    <td>172</td>
+                    <td>0</td>
+                    <td>1.40</td>
+                    <td>2</td>
+                    <td>0</td>
+                    <td>2</td>
+                    <td>1</td>
+                </tr>
+                <tr>
+                    <th>3</th>
+                    <td>56</td>
+                    <td>1</td>
+                    <td>1</td>
+                    <td>120</td>
+                    <td>236</td>
+                    <td>0</td>
+                    <td>1</td>
+                    <td>178</td>
+                    <td>0</td>
+                    <td>0.80</td>
+                    <td>2</td>
+                    <td>0</td>
+                    <td>2</td>
+                    <td>1</td>
+                </tr>
+                <tr>
+                    <th>4</th>
+                    <td>57</td>
+                    <td>0</td>
+                    <td>0</td>
+                    <td>120</td>
+                    <td>354</td>
+                    <td>0</td>
+                    <td>1</td>
+                    <td>163</td>
+                    <td>1</td>
+                    <td>0.60</td>
+                    <td>2</td>
+                    <td>0</td>
+                    <td>2</td>
+                    <td>1</td>
+                </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>
+<div id="bd091ce73526a320" class="cell markdown" data-collapsed="false">
+    <h2 id="exploratory-data-analysis">Exploratory data analysis</h2>
+</div>
+<div id="3d22c14baeca2491" class="cell code" data-execution_count="47"
+     data-ExecuteTime="{&quot;end_time&quot;:&quot;2023-12-10T19:26:30.028283Z&quot;,&quot;start_time&quot;:&quot;2023-12-10T19:26:29.701603Z&quot;}"
+     data-collapsed="false">
+    <div class="sourceCode" id="cb3"><pre
+            class="sourceCode python"><code class="sourceCode python"><span id="cb3-1"><a href="#cb3-1"
+                                                                                          aria-hidden="true"
+                                                                                          tabindex="-1"></a>df_copy.shape</span></code></pre>
+    </div>
+    <div class="output execute_result" data-execution_count="47">
+        <pre><code>(303, 14)</code></pre>
+    </div>
+</div>
+<div id="940407a8b832db7" class="cell code" data-execution_count="48"
+     data-ExecuteTime="{&quot;end_time&quot;:&quot;2023-12-10T19:26:30.029323Z&quot;,&quot;start_time&quot;:&quot;2023-12-10T19:26:29.709042Z&quot;}"
+     data-collapsed="false">
+    <div class="sourceCode" id="cb5"><pre
+            class="sourceCode python"><code class="sourceCode python"><span id="cb5-1"><a href="#cb5-1"
+                                                                                          aria-hidden="true"
+                                                                                          tabindex="-1"></a>df_copy.info()</span></code></pre>
+    </div>
+    <div class="output stream stdout">
+<pre><code>&lt;class &#39;pandas.core.frame.DataFrame&#39;&gt;
+RangeIndex: 303 entries, 0 to 302
+Data columns (total 14 columns):
+ #   Column    Non-Null Count  Dtype  
+---  ------    --------------  -----  
+ 0   age       303 non-null    int64  
+ 1   sex       303 non-null    int64  
+ 2   cp        303 non-null    int64  
+ 3   trtbps    303 non-null    int64  
+ 4   chol      303 non-null    int64  
+ 5   fbs       303 non-null    int64  
+ 6   restecg   303 non-null    int64  
+ 7   thalachh  303 non-null    int64  
+ 8   exng      303 non-null    int64  
+ 9   oldpeak   303 non-null    float64
+ 10  slp       303 non-null    int64  
+ 11  caa       303 non-null    int64  
+ 12  thall     303 non-null    int64  
+ 13  target    303 non-null    int64  
+dtypes: float64(1), int64(13)
+memory usage: 33.3 KB
+</code></pre>
+    </div>
+</div>
+<div id="1a8b23114f8ae1c" class="cell code" data-execution_count="49"
+     data-ExecuteTime="{&quot;end_time&quot;:&quot;2023-12-10T19:26:30.030514Z&quot;,&quot;start_time&quot;:&quot;2023-12-10T19:26:29.712015Z&quot;}"
+     data-collapsed="false">
+    <div class="sourceCode" id="cb7"><pre
+            class="sourceCode python"><code class="sourceCode python"><span id="cb7-1"><a href="#cb7-1"
+                                                                                          aria-hidden="true"
+                                                                                          tabindex="-1"></a>df_copy.isnull().<span
+            class="bu">sum</span>()</span></code></pre>
+    </div>
+    <div class="output execute_result" data-execution_count="49">
+<pre><code>age         0
+sex         0
+cp          0
+trtbps      0
+chol        0
+fbs         0
+restecg     0
+thalachh    0
+exng        0
+oldpeak     0
+slp         0
+caa         0
+thall       0
+target      0
+dtype: int64</code></pre>
+    </div>
+</div>
+<div id="dfea7fc7e01f491d" class="cell markdown" data-collapsed="false">
+    <h3 id="notes"><strong>Notes</strong></h3>
+    <p><code>- no null data</code> <code>- 304 rows, 14 columns</code>
+        <code>- data types - [int &amp; float]</code></p>
+</div>
+<div id="c46e0934bbb99836" class="cell code" data-execution_count="50"
+     data-ExecuteTime="{&quot;end_time&quot;:&quot;2023-12-10T19:26:30.070103Z&quot;,&quot;start_time&quot;:&quot;2023-12-10T19:26:29.784222Z&quot;}"
+     data-collapsed="false">
+    <div class="sourceCode" id="cb9"><pre
+            class="sourceCode python"><code class="sourceCode python"><span id="cb9-1"><a href="#cb9-1"
+                                                                                          aria-hidden="true"
+                                                                                          tabindex="-1"></a>df_copy.describe().T</span></code></pre>
+    </div>
+    <div class="output execute_result" data-execution_count="50">
+        <div>
+            <style scoped>
+                .dataframe tbody tr th:only-of-type {
+                    vertical-align: middle;
+                }
+
+                .dataframe tbody tr th {
+                    vertical-align: top;
+                }
+
+                .dataframe thead th {
+                    text-align: right;
+                }
+            </style>
+            <table border="1" class="dataframe">
+                <thead>
+                <tr style="text-align: right;">
+                    <th></th>
+                    <th>count</th>
+                    <th>mean</th>
+                    <th>std</th>
+                    <th>min</th>
+                    <th>25%</th>
+                    <th>50%</th>
+                    <th>75%</th>
+                    <th>max</th>
+                </tr>
+                </thead>
+                <tbody>
+                <tr>
+                    <th>age</th>
+                    <td>303.00</td>
+                    <td>54.37</td>
+                    <td>9.08</td>
+                    <td>29.00</td>
+                    <td>47.50</td>
+                    <td>55.00</td>
+                    <td>61.00</td>
+                    <td>77.00</td>
+                </tr>
+                <tr>
+                    <th>sex</th>
+                    <td>303.00</td>
+                    <td>0.68</td>
+                    <td>0.47</td>
+                    <td>0.00</td>
+                    <td>0.00</td>
+                    <td>1.00</td>
+                    <td>1.00</td>
+                    <td>1.00</td>
+                </tr>
+                <tr>
+                    <th>cp</th>
+                    <td>303.00</td>
+                    <td>0.97</td>
+                    <td>1.03</td>
+                    <td>0.00</td>
+                    <td>0.00</td>
+                    <td>1.00</td>
+                    <td>2.00</td>
+                    <td>3.00</td>
+                </tr>
+                <tr>
+                    <th>trtbps</th>
+                    <td>303.00</td>
+                    <td>131.62</td>
+                    <td>17.54</td>
+                    <td>94.00</td>
+                    <td>120.00</td>
+                    <td>130.00</td>
+                    <td>140.00</td>
+                    <td>200.00</td>
+                </tr>
+                <tr>
+                    <th>chol</th>
+                    <td>303.00</td>
+                    <td>246.26</td>
+                    <td>51.83</td>
+                    <td>126.00</td>
+                    <td>211.00</td>
+                    <td>240.00</td>
+                    <td>274.50</td>
+                    <td>564.00</td>
+                </tr>
+                <tr>
+                    <th>fbs</th>
+                    <td>303.00</td>
+                    <td>0.15</td>
+                    <td>0.36</td>
+                    <td>0.00</td>
+                    <td>0.00</td>
+                    <td>0.00</td>
+                    <td>0.00</td>
+                    <td>1.00</td>
+                </tr>
+                <tr>
+                    <th>restecg</th>
+                    <td>303.00</td>
+                    <td>0.53</td>
+                    <td>0.53</td>
+                    <td>0.00</td>
+                    <td>0.00</td>
+                    <td>1.00</td>
+                    <td>1.00</td>
+                    <td>2.00</td>
+                </tr>
+                <tr>
+                    <th>thalachh</th>
+                    <td>303.00</td>
+                    <td>149.65</td>
+                    <td>22.91</td>
+                    <td>71.00</td>
+                    <td>133.50</td>
+                    <td>153.00</td>
+                    <td>166.00</td>
+                    <td>202.00</td>
+                </tr>
+                <tr>
+                    <th>exng</th>
+                    <td>303.00</td>
+                    <td>0.33</td>
+                    <td>0.47</td>
+                    <td>0.00</td>
+                    <td>0.00</td>
+                    <td>0.00</td>
+                    <td>1.00</td>
+                    <td>1.00</td>
+                </tr>
+                <tr>
+                    <th>oldpeak</th>
+                    <td>303.00</td>
+                    <td>1.04</td>
+                    <td>1.16</td>
+                    <td>0.00</td>
+                    <td>0.00</td>
+                    <td>0.80</td>
+                    <td>1.60</td>
+                    <td>6.20</td>
+                </tr>
+                <tr>
+                    <th>slp</th>
+                    <td>303.00</td>
+                    <td>1.40</td>
+                    <td>0.62</td>
+                    <td>0.00</td>
+                    <td>1.00</td>
+                    <td>1.00</td>
+                    <td>2.00</td>
+                    <td>2.00</td>
+                </tr>
+                <tr>
+                    <th>caa</th>
+                    <td>303.00</td>
+                    <td>0.73</td>
+                    <td>1.02</td>
+                    <td>0.00</td>
+                    <td>0.00</td>
+                    <td>0.00</td>
+                    <td>1.00</td>
+                    <td>4.00</td>
+                </tr>
+                <tr>
+                    <th>thall</th>
+                    <td>303.00</td>
+                    <td>2.31</td>
+                    <td>0.61</td>
+                    <td>0.00</td>
+                    <td>2.00</td>
+                    <td>2.00</td>
+                    <td>3.00</td>
+                    <td>3.00</td>
+                </tr>
+                <tr>
+                    <th>target</th>
+                    <td>303.00</td>
+                    <td>0.54</td>
+                    <td>0.50</td>
+                    <td>0.00</td>
+                    <td>0.00</td>
+                    <td>1.00</td>
+                    <td>1.00</td>
+                    <td>1.00</td>
+                </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>
+<div id="18caf9e0a60693c8" class="cell code" data-execution_count="51"
+     data-ExecuteTime="{&quot;end_time&quot;:&quot;2023-12-10T19:26:30.083717Z&quot;,&quot;start_time&quot;:&quot;2023-12-10T19:26:29.797152Z&quot;}"
+     data-collapsed="false">
+    <div class="sourceCode" id="cb10"><pre
+            class="sourceCode python"><code class="sourceCode python"><span id="cb10-1"><a href="#cb10-1"
+                                                                                           aria-hidden="true"
+                                                                                           tabindex="-1"></a>df_copy.nunique()</span></code></pre>
+    </div>
+    <div class="output execute_result" data-execution_count="51">
+<pre><code>age          41
+sex           2
+cp            4
+trtbps       49
+chol        152
+fbs           2
+restecg       3
+thalachh     91
+exng          2
+oldpeak      40
+slp           3
+caa           5
+thall         4
+target        2
+dtype: int64</code></pre>
+    </div>
+</div>
+<div id="665fdc6e0f33377e" class="cell markdown" data-collapsed="false">
+    <h3 id="notes"><strong>Notes</strong></h3>
+    <p><code>- small unique values - categorical data</code>
+        <code>- big unique values - numerical data</code></p>
+</div>
+<div id="a8422830fa42ab7d" class="cell code" data-execution_count="52"
+     data-ExecuteTime="{&quot;end_time&quot;:&quot;2023-12-10T19:26:30.086885Z&quot;,&quot;start_time&quot;:&quot;2023-12-10T19:26:29.802995Z&quot;}"
+     data-collapsed="false">
+    <div class="sourceCode" id="cb12"><pre
+            class="sourceCode python"><code class="sourceCode python"><span id="cb12-1"><a href="#cb12-1"
+                                                                                           aria-hidden="true"
+                                                                                           tabindex="-1"></a>cat_cols <span
+            class="op">=</span> [<span class="st">&#39;sex&#39;</span>, <span class="st">&#39;cp&#39;</span>, <span
+            class="st">&#39;fbs&#39;</span>, <span class="st">&#39;restecg&#39;</span>, <span
+            class="st">&#39;exng&#39;</span>, <span class="st">&#39;slp&#39;</span>, <span
+            class="st">&#39;caa&#39;</span>, <span class="st">&#39;thall&#39;</span>, <span
+            class="st">&#39;target&#39;</span>]</span>
+<span id="cb12-2"><a href="#cb12-2" aria-hidden="true" tabindex="-1"></a>num_cols <span class="op">=</span> [<span
+        class="st">&#39;age&#39;</span>, <span class="st">&#39;trtbps&#39;</span>, <span
+        class="st">&#39;chol&#39;</span>, <span class="st">&#39;thalachh&#39;</span>, <span
+        class="st">&#39;oldpeak&#39;</span>] </span></code></pre>
+    </div>
+</div>
+<div id="96ec9273ab43948" class="cell code" data-execution_count="53"
+     data-ExecuteTime="{&quot;end_time&quot;:&quot;2023-12-10T19:26:30.096926Z&quot;,&quot;start_time&quot;:&quot;2023-12-10T19:26:29.805752Z&quot;}"
+     data-collapsed="false">
+    <div class="sourceCode" id="cb13"><pre
+            class="sourceCode python"><code class="sourceCode python"><span id="cb13-1"><a href="#cb13-1"
+                                                                                           aria-hidden="true"
+                                                                                           tabindex="-1"></a>df_copy.duplicated().<span
+            class="bu">sum</span>()</span></code></pre>
+    </div>
+    <div class="output execute_result" data-execution_count="53">
+        <pre><code>1</code></pre>
+    </div>
+</div>
+<div id="c452d58861bc9579" class="cell code" data-execution_count="54"
+     data-ExecuteTime="{&quot;end_time&quot;:&quot;2023-12-10T19:26:30.125489Z&quot;,&quot;start_time&quot;:&quot;2023-12-10T19:26:29.810998Z&quot;}"
+     data-collapsed="false">
+    <div class="sourceCode" id="cb15"><pre
+            class="sourceCode python"><code class="sourceCode python"><span id="cb15-1"><a href="#cb15-1"
+                                                                                           aria-hidden="true"
+                                                                                           tabindex="-1"></a>df_copy.drop_duplicates()</span></code></pre>
+    </div>
+    <div class="output execute_result" data-execution_count="54">
+        <div>
+            <style scoped>
+                .dataframe tbody tr th:only-of-type {
+                    vertical-align: middle;
+                }
+
+                .dataframe tbody tr th {
+                    vertical-align: top;
+                }
+
+                .dataframe thead th {
+                    text-align: right;
+                }
+            </style>
+            <table border="1" class="dataframe">
+                <thead>
+                <tr style="text-align: right;">
+                    <th></th>
+                    <th>age</th>
+                    <th>sex</th>
+                    <th>cp</th>
+                    <th>trtbps</th>
+                    <th>chol</th>
+                    <th>fbs</th>
+                    <th>restecg</th>
+                    <th>thalachh</th>
+                    <th>exng</th>
+                    <th>oldpeak</th>
+                    <th>slp</th>
+                    <th>caa</th>
+                    <th>thall</th>
+                    <th>target</th>
+                </tr>
+                </thead>
+                <tbody>
+                <tr>
+                    <th>0</th>
+                    <td>63</td>
+                    <td>1</td>
+                    <td>3</td>
+                    <td>145</td>
+                    <td>233</td>
+                    <td>1</td>
+                    <td>0</td>
+                    <td>150</td>
+                    <td>0</td>
+                    <td>2.30</td>
+                    <td>0</td>
+                    <td>0</td>
+                    <td>1</td>
+                    <td>1</td>
+                </tr>
+                <tr>
+                    <th>1</th>
+                    <td>37</td>
+                    <td>1</td>
+                    <td>2</td>
+                    <td>130</td>
+                    <td>250</td>
+                    <td>0</td>
+                    <td>1</td>
+                    <td>187</td>
+                    <td>0</td>
+                    <td>3.50</td>
+                    <td>0</td>
+                    <td>0</td>
+                    <td>2</td>
+                    <td>1</td>
+                </tr>
+                <tr>
+                    <th>2</th>
+                    <td>41</td>
+                    <td>0</td>
+                    <td>1</td>
+                    <td>130</td>
+                    <td>204</td>
+                    <td>0</td>
+                    <td>0</td>
+                    <td>172</td>
+                    <td>0</td>
+                    <td>1.40</td>
+                    <td>2</td>
+                    <td>0</td>
+                    <td>2</td>
+                    <td>1</td>
+                </tr>
+                <tr>
+                    <th>3</th>
+                    <td>56</td>
+                    <td>1</td>
+                    <td>1</td>
+                    <td>120</td>
+                    <td>236</td>
+                    <td>0</td>
+                    <td>1</td>
+                    <td>178</td>
+                    <td>0</td>
+                    <td>0.80</td>
+                    <td>2</td>
+                    <td>0</td>
+                    <td>2</td>
+                    <td>1</td>
+                </tr>
+                <tr>
+                    <th>4</th>
+                    <td>57</td>
+                    <td>0</td>
+                    <td>0</td>
+                    <td>120</td>
+                    <td>354</td>
+                    <td>0</td>
+                    <td>1</td>
+                    <td>163</td>
+                    <td>1</td>
+                    <td>0.60</td>
+                    <td>2</td>
+                    <td>0</td>
+                    <td>2</td>
+                    <td>1</td>
+                </tr>
+                <tr>
+                    <th>...</th>
+                    <td>...</td>
+                    <td>...</td>
+                    <td>...</td>
+                    <td>...</td>
+                    <td>...</td>
+                    <td>...</td>
+                    <td>...</td>
+                    <td>...</td>
+                    <td>...</td>
+                    <td>...</td>
+                    <td>...</td>
+                    <td>...</td>
+                    <td>...</td>
+                    <td>...</td>
+                </tr>
+                <tr>
+                    <th>298</th>
+                    <td>57</td>
+                    <td>0</td>
+                    <td>0</td>
+                    <td>140</td>
+                    <td>241</td>
+                    <td>0</td>
+                    <td>1</td>
+                    <td>123</td>
+                    <td>1</td>
+                    <td>0.20</td>
+                    <td>1</td>
+                    <td>0</td>
+                    <td>3</td>
+                    <td>0</td>
+                </tr>
+                <tr>
+                    <th>299</th>
+                    <td>45</td>
+                    <td>1</td>
+                    <td>3</td>
+                    <td>110</td>
+                    <td>264</td>
+                    <td>0</td>
+                    <td>1</td>
+                    <td>132</td>
+                    <td>0</td>
+                    <td>1.20</td>
+                    <td>1</td>
+                    <td>0</td>
+                    <td>3</td>
+                    <td>0</td>
+                </tr>
+                <tr>
+                    <th>300</th>
+                    <td>68</td>
+                    <td>1</td>
+                    <td>0</td>
+                    <td>144</td>
+                    <td>193</td>
+                    <td>1</td>
+                    <td>1</td>
+                    <td>141</td>
+                    <td>0</td>
+                    <td>3.40</td>
+                    <td>1</td>
+                    <td>2</td>
+                    <td>3</td>
+                    <td>0</td>
+                </tr>
+                <tr>
+                    <th>301</th>
+                    <td>57</td>
+                    <td>1</td>
+                    <td>0</td>
+                    <td>130</td>
+                    <td>131</td>
+                    <td>0</td>
+                    <td>1</td>
+                    <td>115</td>
+                    <td>1</td>
+                    <td>1.20</td>
+                    <td>1</td>
+                    <td>1</td>
+                    <td>3</td>
+                    <td>0</td>
+                </tr>
+                <tr>
+                    <th>302</th>
+                    <td>57</td>
+                    <td>0</td>
+                    <td>1</td>
+                    <td>130</td>
+                    <td>236</td>
+                    <td>0</td>
+                    <td>0</td>
+                    <td>174</td>
+                    <td>0</td>
+                    <td>0.00</td>
+                    <td>1</td>
+                    <td>1</td>
+                    <td>2</td>
+                    <td>0</td>
+                </tr>
+                </tbody>
+            </table>
+            <p>302 rows × 14 columns</p>
+        </div>
+    </div>
+</div>
+<div id="ab72e79be6f7bc11" class="cell markdown" data-collapsed="false">
+    <p>Here are 2 new columns: "age category" and "blood pressure type"</p>
+</div>
+<div id="5fe03d97fc652cf0" class="cell code" data-execution_count="55"
+     data-ExecuteTime="{&quot;end_time&quot;:&quot;2023-12-10T19:26:30.128455Z&quot;,&quot;start_time&quot;:&quot;2023-12-10T19:26:29.821931Z&quot;}"
+     data-collapsed="false">
+    <div class="sourceCode" id="cb16"><pre
+            class="sourceCode python"><code class="sourceCode python"><span id="cb16-1"><a href="#cb16-1"
+                                                                                           aria-hidden="true"
+                                                                                           tabindex="-1"></a>df_copy[<span
+            class="st">&#39;age_cat&#39;</span>] <span class="op">=</span> pd.cut(x<span
+            class="op">=</span>df_copy[<span class="st">&#39;age&#39;</span>], </span>
+<span id="cb16-2"><a href="#cb16-2" aria-hidden="true" tabindex="-1"></a>                            bins<span
+        class="op">=</span>[<span class="dv">20</span>, <span class="dv">40</span>, <span class="dv">60</span>, df_copy[<span
+        class="st">&#39;age&#39;</span>].<span class="bu">max</span>()], </span>
+<span id="cb16-3"><a href="#cb16-3" aria-hidden="true" tabindex="-1"></a>                            labels<span
+        class="op">=</span>[<span class="st">&#39;0&#39;</span>, <span class="st">&#39;1&#39;</span>, <span class="st">&#39;2&#39;</span>])</span>
+<span id="cb16-4"><a href="#cb16-4" aria-hidden="true" tabindex="-1"></a>df_copy[<span
+        class="st">&#39;pres_type&#39;</span>] <span class="op">=</span> pd.cut(x<span class="op">=</span>df_copy[<span
+        class="st">&#39;trtbps&#39;</span>], </span>
+<span id="cb16-5"><a href="#cb16-5" aria-hidden="true" tabindex="-1"></a>                            bins<span
+        class="op">=</span>[<span class="dv">90</span>, <span class="dv">119</span>, <span class="dv">129</span>, <span
+        class="dv">139</span>, df_copy[<span class="st">&#39;trtbps&#39;</span>].<span class="bu">max</span>()], </span>
+<span id="cb16-6"><a href="#cb16-6" aria-hidden="true" tabindex="-1"></a>                            labels<span
+        class="op">=</span>[<span class="st">&#39;0&#39;</span>, <span class="st">&#39;1&#39;</span>, <span class="st">&#39;2&#39;</span>, <span
+        class="st">&#39;3&#39;</span>])</span></code></pre>
+    </div>
+</div>
+<div id="a660c457acfb0c2" class="cell markdown" data-collapsed="false">
+    <p><code>age_cat</code> - Age Category:</p>
+    <ul>
+        <li>0 - Adult(20-40 y.o)</li>
+        <li>1 - Middle Age Adult(41-60 y.o)</li>
+        <li>2 - Senior Adult(61+ y.o)</li>
+    </ul>
+    <p><code>pres_type</code> - Blood pressure type:</p>
+    <ul>
+        <li>0 - normal (&lt;120 bpm)</li>
+        <li>1 - elevated (120-129 bpm)</li>
+        <li>2 - high pressure st1 (130-139 bpm)</li>
+        <li>3 - high pressure st2 (140+ bpm)</li>
+    </ul>
+</div>
+<div id="f197158c3c27fd4" class="cell code" data-execution_count="56"
+     data-ExecuteTime="{&quot;end_time&quot;:&quot;2023-12-10T19:26:30.154688Z&quot;,&quot;start_time&quot;:&quot;2023-12-10T19:26:29.827125Z&quot;}"
+     data-collapsed="false">
+    <div class="sourceCode" id="cb17"><pre
+            class="sourceCode python"><code class="sourceCode python"><span id="cb17-1"><a href="#cb17-1"
+                                                                                           aria-hidden="true"
+                                                                                           tabindex="-1"></a>cat_cols.append(<span
+            class="st">&#39;age_cat&#39;</span>)</span>
+<span id="cb17-2"><a href="#cb17-2" aria-hidden="true" tabindex="-1"></a>cat_cols.append(<span class="st">&#39;pres_type&#39;</span>)</span>
+<span id="cb17-3"><a href="#cb17-3" aria-hidden="true" tabindex="-1"></a>df_copy</span></code></pre>
+    </div>
+    <div class="output execute_result" data-execution_count="56">
+        <div>
+            <style scoped>
+                .dataframe tbody tr th:only-of-type {
+                    vertical-align: middle;
+                }
+
+                .dataframe tbody tr th {
+                    vertical-align: top;
+                }
+
+                .dataframe thead th {
+                    text-align: right;
+                }
+            </style>
+            <table border="1" class="dataframe">
+                <thead>
+                <tr style="text-align: right;">
+                    <th></th>
+                    <th>age</th>
+                    <th>sex</th>
+                    <th>cp</th>
+                    <th>trtbps</th>
+                    <th>chol</th>
+                    <th>fbs</th>
+                    <th>restecg</th>
+                    <th>thalachh</th>
+                    <th>exng</th>
+                    <th>oldpeak</th>
+                    <th>slp</th>
+                    <th>caa</th>
+                    <th>thall</th>
+                    <th>target</th>
+                    <th>age_cat</th>
+                    <th>pres_type</th>
+                </tr>
+                </thead>
+                <tbody>
+                <tr>
+                    <th>0</th>
+                    <td>63</td>
+                    <td>1</td>
+                    <td>3</td>
+                    <td>145</td>
+                    <td>233</td>
+                    <td>1</td>
+                    <td>0</td>
+                    <td>150</td>
+                    <td>0</td>
+                    <td>2.30</td>
+                    <td>0</td>
+                    <td>0</td>
+                    <td>1</td>
+                    <td>1</td>
+                    <td>2</td>
+                    <td>3</td>
+                </tr>
+                <tr>
+                    <th>1</th>
+                    <td>37</td>
+                    <td>1</td>
+                    <td>2</td>
+                    <td>130</td>
+                    <td>250</td>
+                    <td>0</td>
+                    <td>1</td>
+                    <td>187</td>
+                    <td>0</td>
+                    <td>3.50</td>
+                    <td>0</td>
+                    <td>0</td>
+                    <td>2</td>
+                    <td>1</td>
+                    <td>0</td>
+                    <td>2</td>
+                </tr>
+                <tr>
+                    <th>2</th>
+                    <td>41</td>
+                    <td>0</td>
+                    <td>1</td>
+                    <td>130</td>
+                    <td>204</td>
+                    <td>0</td>
+                    <td>0</td>
+                    <td>172</td>
+                    <td>0</td>
+                    <td>1.40</td>
+                    <td>2</td>
+                    <td>0</td>
+                    <td>2</td>
+                    <td>1</td>
+                    <td>1</td>
+                    <td>2</td>
+                </tr>
+                <tr>
+                    <th>3</th>
+                    <td>56</td>
+                    <td>1</td>
+                    <td>1</td>
+                    <td>120</td>
+                    <td>236</td>
+                    <td>0</td>
+                    <td>1</td>
+                    <td>178</td>
+                    <td>0</td>
+                    <td>0.80</td>
+                    <td>2</td>
+                    <td>0</td>
+                    <td>2</td>
+                    <td>1</td>
+                    <td>1</td>
+                    <td>1</td>
+                </tr>
+                <tr>
+                    <th>4</th>
+                    <td>57</td>
+                    <td>0</td>
+                    <td>0</td>
+                    <td>120</td>
+                    <td>354</td>
+                    <td>0</td>
+                    <td>1</td>
+                    <td>163</td>
+                    <td>1</td>
+                    <td>0.60</td>
+                    <td>2</td>
+                    <td>0</td>
+                    <td>2</td>
+                    <td>1</td>
+                    <td>1</td>
+                    <td>1</td>
+                </tr>
+                <tr>
+                    <th>...</th>
+                    <td>...</td>
+                    <td>...</td>
+                    <td>...</td>
+                    <td>...</td>
+                    <td>...</td>
+                    <td>...</td>
+                    <td>...</td>
+                    <td>...</td>
+                    <td>...</td>
+                    <td>...</td>
+                    <td>...</td>
+                    <td>...</td>
+                    <td>...</td>
+                    <td>...</td>
+                    <td>...</td>
+                    <td>...</td>
+                </tr>
+                <tr>
+                    <th>298</th>
+                    <td>57</td>
+                    <td>0</td>
+                    <td>0</td>
+                    <td>140</td>
+                    <td>241</td>
+                    <td>0</td>
+                    <td>1</td>
+                    <td>123</td>
+                    <td>1</td>
+                    <td>0.20</td>
+                    <td>1</td>
+                    <td>0</td>
+                    <td>3</td>
+                    <td>0</td>
+                    <td>1</td>
+                    <td>3</td>
+                </tr>
+                <tr>
+                    <th>299</th>
+                    <td>45</td>
+                    <td>1</td>
+                    <td>3</td>
+                    <td>110</td>
+                    <td>264</td>
+                    <td>0</td>
+                    <td>1</td>
+                    <td>132</td>
+                    <td>0</td>
+                    <td>1.20</td>
+                    <td>1</td>
+                    <td>0</td>
+                    <td>3</td>
+                    <td>0</td>
+                    <td>1</td>
+                    <td>0</td>
+                </tr>
+                <tr>
+                    <th>300</th>
+                    <td>68</td>
+                    <td>1</td>
+                    <td>0</td>
+                    <td>144</td>
+                    <td>193</td>
+                    <td>1</td>
+                    <td>1</td>
+                    <td>141</td>
+                    <td>0</td>
+                    <td>3.40</td>
+                    <td>1</td>
+                    <td>2</td>
+                    <td>3</td>
+                    <td>0</td>
+                    <td>2</td>
+                    <td>3</td>
+                </tr>
+                <tr>
+                    <th>301</th>
+                    <td>57</td>
+                    <td>1</td>
+                    <td>0</td>
+                    <td>130</td>
+                    <td>131</td>
+                    <td>0</td>
+                    <td>1</td>
+                    <td>115</td>
+                    <td>1</td>
+                    <td>1.20</td>
+                    <td>1</td>
+                    <td>1</td>
+                    <td>3</td>
+                    <td>0</td>
+                    <td>1</td>
+                    <td>2</td>
+                </tr>
+                <tr>
+                    <th>302</th>
+                    <td>57</td>
+                    <td>0</td>
+                    <td>1</td>
+                    <td>130</td>
+                    <td>236</td>
+                    <td>0</td>
+                    <td>0</td>
+                    <td>174</td>
+                    <td>0</td>
+                    <td>0.00</td>
+                    <td>1</td>
+                    <td>1</td>
+                    <td>2</td>
+                    <td>0</td>
+                    <td>1</td>
+                    <td>2</td>
+                </tr>
+                </tbody>
+            </table>
+            <p>303 rows × 16 columns</p>
+        </div>
+    </div>
+</div>
+<div id="1911c38fd285c969" class="cell markdown" data-collapsed="false">
+    <h2 id="first-view-visualization">First View Visualization</h2>
+</div>
+<div id="61f888c79c42e24a" class="cell code" data-execution_count="57"
+     data-ExecuteTime="{&quot;end_time&quot;:&quot;2023-12-10T19:26:30.454922Z&quot;,&quot;start_time&quot;:&quot;2023-12-10T19:26:29.840534Z&quot;}"
+     data-collapsed="false">
+    <div class="sourceCode" id="cb18"><pre
+            class="sourceCode python"><code class="sourceCode python"><span id="cb18-1"><a href="#cb18-1"
+                                                                                           aria-hidden="true"
+                                                                                           tabindex="-1"></a>palette_color <span
+            class="op">=</span> sns.color_palette(<span class="st">&quot;Paired&quot;</span>)</span>
+<span id="cb18-2"><a href="#cb18-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb18-3"><a href="#cb18-3" aria-hidden="true" tabindex="-1"></a>fig, axs <span class="op">=</span> plt.subplots(<span
+        class="dv">1</span>,<span class="dv">2</span>, figsize <span class="op">=</span> (<span
+        class="dv">15</span>, <span class="dv">5</span>))</span>
+<span id="cb18-4"><a href="#cb18-4" aria-hidden="true" tabindex="-1"></a>ax <span class="op">=</span> sns.countplot(data<span
+        class="op">=</span>df_copy, </span>
+<span id="cb18-5"><a href="#cb18-5" aria-hidden="true" tabindex="-1"></a>                   x<span class="op">=</span>df_copy[<span
+        class="st">&#39;sex&#39;</span>],</span>
+<span id="cb18-6"><a href="#cb18-6" aria-hidden="true" tabindex="-1"></a>                   ax <span class="op">=</span> axs[<span
+        class="dv">0</span>],</span>
+<span id="cb18-7"><a href="#cb18-7" aria-hidden="true" tabindex="-1"></a>                   palette<span
+        class="op">=</span>[<span class="st">&quot;#a6cee3&quot;</span>, <span
+        class="st">&quot;#1f78b4&quot;</span>])</span>
+<span id="cb18-8"><a href="#cb18-8" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb18-9"><a href="#cb18-9" aria-hidden="true" tabindex="-1"></a>ax.set_xlabel(<span
+        class="st">&#39;Sex&#39;</span>, fontsize<span class="op">=</span><span class="dv">14</span>)</span>
+<span id="cb18-10"><a href="#cb18-10" aria-hidden="true" tabindex="-1"></a>axs[<span
+        class="dv">0</span>].set_title(<span class="st">&quot;Count of Sex&quot;</span>, fontsize<span
+        class="op">=</span><span class="dv">16</span>)</span>
+<span id="cb18-11"><a href="#cb18-11" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb18-12"><a href="#cb18-12" aria-hidden="true" tabindex="-1"></a>ax2 <span class="op">=</span> df_copy[<span
+        class="st">&#39;sex&#39;</span>].value_counts().plot.pie(explode<span class="op">=</span>[<span
+        class="dv">0</span>,<span class="fl">0.07</span>], </span>
+<span id="cb18-13"><a href="#cb18-13" aria-hidden="true" tabindex="-1"></a>                                             colors<span
+        class="op">=</span>[<span class="st">&quot;#a6cee3&quot;</span>, <span
+        class="st">&quot;#1f78b4&quot;</span>],</span>
+<span id="cb18-14"><a href="#cb18-14" aria-hidden="true" tabindex="-1"></a>                                             ax <span
+        class="op">=</span> axs[<span class="dv">1</span>],</span>
+<span id="cb18-15"><a href="#cb18-15" aria-hidden="true" tabindex="-1"></a>                                             autopct<span
+        class="op">=</span><span class="st">&#39;</span><span class="sc">%.2f%%</span><span
+        class="st">&#39;</span>)</span>
+<span id="cb18-16"><a href="#cb18-16" aria-hidden="true" tabindex="-1"></a>axs[<span
+        class="dv">1</span>].set_title(<span class="st">&quot;Ratio of Sex&quot;</span>, fontsize<span
+        class="op">=</span><span class="dv">16</span>)<span class="op">;</span></span>
+<span id="cb18-17"><a href="#cb18-17" aria-hidden="true" tabindex="-1"></a>plt.savefig(<span class="st">&#39;static/1.png&#39;</span>)</span></code></pre>
+    </div>
+    <div class="output display_data">
+        <p><a href="/game" class="white-button"> Open page game to see picture</a></p>
+    </div>
+</div>
+<div id="7ee223921b629230" class="cell code" data-execution_count="58"
+     data-ExecuteTime="{&quot;end_time&quot;:&quot;2023-12-10T19:26:30.656106Z&quot;,&quot;start_time&quot;:&quot;2023-12-10T19:26:30.075426Z&quot;}"
+     data-collapsed="false">
+    <div class="sourceCode" id="cb19"><pre
+            class="sourceCode python"><code class="sourceCode python"><span id="cb19-1"><a href="#cb19-1"
+                                                                                           aria-hidden="true"
+                                                                                           tabindex="-1"></a>sns.histplot(data <span
+            class="op">=</span> df_copy,</span>
+<span id="cb19-2"><a href="#cb19-2" aria-hidden="true" tabindex="-1"></a>             x <span class="op">=</span> <span
+        class="st">&#39;age&#39;</span>,</span>
+<span id="cb19-3"><a href="#cb19-3" aria-hidden="true" tabindex="-1"></a>             bins <span
+        class="op">=</span> <span class="dv">41</span>,</span>
+<span id="cb19-4"><a href="#cb19-4" aria-hidden="true" tabindex="-1"></a>             kde <span
+        class="op">=</span> <span class="va">True</span>)</span>
+<span id="cb19-5"><a href="#cb19-5" aria-hidden="true" tabindex="-1"></a>plt.title(<span class="st">&#39;Age&#39;</span>,  fontweight <span
+        class="op">=</span> <span class="st">&#39;bold&#39;</span>)</span>
+<span id="cb19-6"><a href="#cb19-6" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb19-7"><a href="#cb19-7" aria-hidden="true" tabindex="-1"></a>plt.xticks(<span class="bu">range</span>(<span
+        class="dv">25</span>,<span class="dv">81</span>,<span class="dv">5</span>))</span>
+<span id="cb19-8"><a href="#cb19-8" aria-hidden="true" tabindex="-1"></a>plt.savefig(<span class="st">&#39;static/2.png&#39;</span>)</span>
+<span id="cb19-9"><a href="#cb19-9" aria-hidden="true" tabindex="-1"></a>plt.show()</span></code></pre>
+    </div>
+    <div class="output display_data"><p><a href="/game" class="white-button"> Open page game to see picture</a></p>
+    </div>
+</div>
+<div id="cfca655455c7fd88" class="cell code" data-execution_count="59"
+     data-ExecuteTime="{&quot;end_time&quot;:&quot;2023-12-10T19:26:30.713153Z&quot;,&quot;start_time&quot;:&quot;2023-12-10T19:26:30.319948Z&quot;}"
+     data-collapsed="false">
+    <div class="sourceCode" id="cb20"><pre
+            class="sourceCode python"><code class="sourceCode python"><span id="cb20-1"><a href="#cb20-1"
+                                                                                           aria-hidden="true"
+                                                                                           tabindex="-1"></a>ax <span
+            class="op">=</span> df_copy[<span class="st">&#39;target&#39;</span>].value_counts().plot.pie(explode<span
+            class="op">=</span>[<span class="dv">0</span>,<span class="fl">0.07</span>], </span>
+<span id="cb20-2"><a href="#cb20-2" aria-hidden="true" tabindex="-1"></a>                                               colors<span
+        class="op">=</span>[<span class="st">&quot;#a6cee3&quot;</span>, <span
+        class="st">&quot;#1f78b4&quot;</span>],</span>
+<span id="cb20-3"><a href="#cb20-3" aria-hidden="true" tabindex="-1"></a>                                               autopct<span
+        class="op">=</span><span class="st">&#39;</span><span class="sc">%.2f%%</span><span
+        class="st">&#39;</span>,</span>
+<span id="cb20-4"><a href="#cb20-4" aria-hidden="true" tabindex="-1"></a>                                               figsize<span
+        class="op">=</span>(<span class="dv">15</span>, <span class="dv">5</span>))</span>
+<span id="cb20-5"><a href="#cb20-5" aria-hidden="true" tabindex="-1"></a>ax.set_title(<span class="st">&#39;Target Distribution&#39;</span>)<span
+        class="op">;</span></span>
+<span id="cb20-6"><a href="#cb20-6" aria-hidden="true" tabindex="-1"></a>plt.savefig(<span class="st">&#39;static/3.png&#39;</span>)</span></code></pre>
+    </div>
+    <div class="output display_data">
+        <p><a href="/game" class="white-button"> Open page game to see picture</a></p></div>
+</div>
+<div id="d659adf0fcd06816" class="cell code" data-execution_count="60"
+     data-ExecuteTime="{&quot;end_time&quot;:&quot;2023-12-10T19:26:30.919446Z&quot;,&quot;start_time&quot;:&quot;2023-12-10T19:26:30.439175Z&quot;}"
+     data-collapsed="false">
+    <div class="sourceCode" id="cb21"><pre
+            class="sourceCode python"><code class="sourceCode python"><span id="cb21-1"><a href="#cb21-1"
+                                                                                           aria-hidden="true"
+                                                                                           tabindex="-1"></a>ax <span
+            class="op">=</span> df_copy[<span class="st">&#39;pres_type&#39;</span>].value_counts().plot.pie(</span>
+<span id="cb21-2"><a href="#cb21-2" aria-hidden="true" tabindex="-1"></a>                                               colors<span
+        class="op">=</span>[<span class="st">&quot;#a6cee3&quot;</span>, <span
+        class="st">&quot;#1f78b4&quot;</span>],</span>
+<span id="cb21-3"><a href="#cb21-3" aria-hidden="true" tabindex="-1"></a>                                               autopct<span
+        class="op">=</span><span class="st">&#39;</span><span class="sc">%.2f%%</span><span
+        class="st">&#39;</span>,</span>
+<span id="cb21-4"><a href="#cb21-4" aria-hidden="true" tabindex="-1"></a>                                               figsize<span
+        class="op">=</span>(<span class="dv">15</span>, <span class="dv">5</span>))</span>
+<span id="cb21-5"><a href="#cb21-5" aria-hidden="true" tabindex="-1"></a>ax.set_title(<span class="st">&#39;Pressure Types Distribution&#39;</span>)<span
+        class="op">;</span></span>
+<span id="cb21-6"><a href="#cb21-6" aria-hidden="true" tabindex="-1"></a>plt.savefig(<span class="st">&#39;static/4.png&#39;</span>)</span></code></pre>
+    </div>
+    <div class="output display_data">
+        <p><a href="/game" class="white-button"> Open page game to see picture</a></p>
+    </div>
+</div>
+<div id="5efc15d7596c4d42" class="cell code" data-execution_count="61"
+     data-ExecuteTime="{&quot;end_time&quot;:&quot;2023-12-10T19:26:31.055766Z&quot;,&quot;start_time&quot;:&quot;2023-12-10T19:26:30.570674Z&quot;}"
+     data-collapsed="false">
+    <div class="sourceCode" id="cb22"><pre
+            class="sourceCode python"><code class="sourceCode python"><span id="cb22-1"><a href="#cb22-1"
+                                                                                           aria-hidden="true"
+                                                                                           tabindex="-1"></a>fbs_count <span
+            class="op">=</span> df_copy[<span class="st">&#39;fbs&#39;</span>].value_counts()</span>
+<span id="cb22-2"><a href="#cb22-2" aria-hidden="true" tabindex="-1"></a>plt.figure(figsize<span
+        class="op">=</span>(<span class="dv">15</span>,<span class="dv">5</span>))</span>
+<span id="cb22-3"><a href="#cb22-3" aria-hidden="true" tabindex="-1"></a>plt.bar(fbs_count.index, fbs_count.values, color<span
+        class="op">=</span>[<span class="st">&quot;#a6cee3&quot;</span>, <span
+        class="st">&quot;#1f78b4&quot;</span>])</span>
+<span id="cb22-4"><a href="#cb22-4" aria-hidden="true" tabindex="-1"></a>plt.title(<span class="st">&#39;Fasting Blood Sugar Distribution&#39;</span>)</span>
+<span id="cb22-5"><a href="#cb22-5" aria-hidden="true" tabindex="-1"></a>plt.xticks(ticks<span class="op">=</span>[<span
+        class="dv">0</span>, <span class="dv">1</span>], </span>
+<span id="cb22-6"><a href="#cb22-6" aria-hidden="true" tabindex="-1"></a>           labels<span
+        class="op">=</span>[<span class="st">&#39;FBS &lt; 120 md/dl&#39;</span>, <span class="st">&#39;FBS &gt; 120 md/dl&#39;</span> ])</span>
+<span id="cb22-7"><a href="#cb22-7" aria-hidden="true" tabindex="-1"></a>plt.savefig(<span class="st">&#39;static/9.png&#39;</span>)</span>
+<span id="cb22-8"><a href="#cb22-8" aria-hidden="true" tabindex="-1"></a>plt.show()</span></code></pre>
+    </div>
+    <div class="output display_data">
+        <p><a href="/game" class="white-button"> Open page game to see picture</a></p></div>
+</div>
+<div id="8336ac78ec33c56c" class="cell markdown" data-collapsed="false">
+    <h2 id="data-formation">Data Formation</h2>
+    <p>There are some categorical aspects of my dataset, that wasn't fully
+        describeв by its creator. So, I have no idea what they mean and I can't
+        check it anywhere. The categorising idea of these aspects are not
+        traditional. Hence, I should drop this data out of the dataset to make
+        the research more objective.</p>
+    <h4 id="these-aspects-are-old-peak-slp-caa-thall">These aspects are: old
+        peak, slp, caa, thall</h4>
+</div>
+<div id="39eb9e589a351857" class="cell code" data-execution_count="62"
+     data-ExecuteTime="{&quot;end_time&quot;:&quot;2023-12-10T19:26:31.056106Z&quot;,&quot;start_time&quot;:&quot;2023-12-10T19:26:30.720113Z&quot;}"
+     data-collapsed="false">
+    <div class="sourceCode" id="cb23"><pre
+            class="sourceCode python"><code class="sourceCode python"><span id="cb23-1"><a href="#cb23-1"
+                                                                                           aria-hidden="true"
+                                                                                           tabindex="-1"></a>df_copy <span
+            class="op">=</span> df_copy.drop([<span class="st">&#39;oldpeak&#39;</span>, <span
+            class="st">&#39;caa&#39;</span>, <span class="st">&#39;thall&#39;</span>, <span
+            class="st">&#39;slp&#39;</span>], axis<span class="op">=</span><span
+            class="dv">1</span>)</span></code></pre>
+    </div>
+</div>
+
+</body>
+</html>

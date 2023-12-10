@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: 'Arial', sans-serif;
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+        }
+
+        header {
+            background-color: #3498db; /* Синий цвет для header */
+            color: #FFFFFF; /* Белый цвет текста в header */
+            padding: 10px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        header a {
+            color: #FFFFFF; /* Белый цвет для ссылок в header */
+            text-decoration: none;
+            margin: 0 20px;
+            padding-bottom: 3px;
+            border-bottom: 2px solid transparent; /* Убрано подчеркивание у ссылок */
+            transition: border-bottom 0.3s ease;
+        }
+
+        header a:hover {
+            border-bottom: 2px solid #FFFFFF; /* Добавлено подчеркивание при наведении на ссылку */
+        }
+
+        .container {
+            background-color: #3498db; /* Синий цвет для контейнера */
+            color: #FFFFFF; /* Белый цвет текста в контейнере */
+            padding: 20px;
+            margin: 20px auto;
+            width: 80%;
+            text-align: center;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        button {
+            background-color: #2980b9; /* Более темный синий цвет для кнопки */
+            color: #FFFFFF; /* Белый цвет текста на кнопке */
+            padding: 10px 20px;
+            font-size: 16px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        footer {
+            background-color: #3498db; /* Синий цвет для footer */
+            color: #FFFFFF; /* Белый цвет текста в footer */
+            text-align: center;
+            padding: 5px;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+
+        footer a {
+            color: #FFFFFF; /* Белый цвет для ссылок в footer */
+            text-decoration: none;
+            margin: 0 10px;
+        }
+    </style>
+    {% block style %}{% endblock %}
+    <title>{% block title %}{% endblock %}</title>
+</head>
+<body>
+<header>
+    <nav>
+        <a href="/home">Home</a>
+        <a href="/game">Game</a>
+        <a href="/all">All</a>
+    </nav>
+</header>
+{% block body %}{% endblock %}
+<footer>
+    <a href="https://github.com/AGreatGreyMouse/DS-project-Heart-Attacks-" target="_blank" rel="noopener noreferrer">GitHub</a> | Ivan Fomin 231-1
+    HSExLSE AMIxDSBA
+</footer>
+</body>
+</html>

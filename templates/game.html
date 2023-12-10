@@ -1,0 +1,108 @@
+{% extends 'base.html' %}
+{% block style %}
+<style>
+    .main-container {
+        background-color: #F0F0F0; /* Светло-серый цвет для основного контейнера */
+        padding: 20px;
+        margin: 50px auto;
+        width: 60%;
+        text-align: center;
+        border-radius: 10px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        display: flex; /* Add display:flex to main container for flex layout */
+    }
+
+    .sidebar {
+        width: 20%; /* Set the width of the sidebar */
+        padding: 20px;
+        background-color: #ddd; /* Sidebar background color */
+        border-radius: 10px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+
+    .sidebar img {
+        width: 5%; /* Set the width of the image inside the sidebar to 80% */
+        border-radius: 10px; /* Optionally set border-radius for the image */
+    }
+
+
+    .content {
+        flex: 1; /* Allow the content to take remaining space */
+        padding: 20px;
+        background-color: #FFFFFF; /* White color for the content area */
+        border-radius: 10px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+
+    input {
+        width: 80%;
+        padding: 10px;
+        margin-bottom: 20px;
+        box-sizing: border-box;
+    }
+
+    .result-container {
+        margin-top: 20px;
+    }
+
+    img {
+        width: 90%;
+    }
+</style>
+{% endblock %}
+{% block title %}
+COUNT
+{% endblock %}
+
+{% block body %}
+<div class="main-container">
+
+
+    <div class="content">
+        <form method="post">
+            <p>Select</p>
+            <input type="text" name="cnt" placeholder="input"/>
+            <button type="submit">submit</button>
+        </form>
+
+        <div class="result-container" id="resultContainer">
+            {% if result == 'Sex plots' %}
+            <img src="../static/1.png">
+            {% endif %}
+            {% if result == 'Age' %}
+            <img src="../static/2.png">
+            {% endif %}
+            {% if result == 'Target Distribution' %}
+            <img src="../static/3.png">
+            {% endif %}
+            {% if result == 'Pressure Types Distribution' %}
+            <img src="../static/4.png">
+            {% endif %}
+            {% if result == 'Chest Pain Type vs Target' %}
+            <img src="../static/5.png">
+            {% endif %}
+            {% if result == 'Age Categories vs Target' %}
+            <img src="../static/6.png">
+            {% endif %}
+            {% if result == 'Sex vs Target' %}
+            <img src="../static/7.png">
+            {% endif %}
+            {% if result == 'Fasting Blood Sugar Distribution' %}
+            <img src="../static/9.png">
+            {% endif %}
+
+        </div>
+    </div>
+    <div class="sidebar">
+        <b> <p>Choose:</p></b>
+        <p>Sex plots</p>
+        <p>Age</p>
+        <p>Target Distribution</p>
+        <p>Pressure Types Distribution</p>
+        <p>Fasting Blood Sugar Distribution</p>
+        <p>Chest Pain Type vs Target</p>
+        <p>Age Categories vs Target</p>
+        <p>Sex vs Target</p>
+    </div>
+</div>
+{% endblock %}
